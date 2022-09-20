@@ -2,8 +2,9 @@ const plain = () => null;
 
 export const getServerSideProps = async ({ res }) => {
   res.setHeader('Content-Type', 'text/plain');
-  res.setHeader('author', 'admin');
-  res.end('admin');
+	res.setHeader('X-Author', 'tsarjke');
+	res.setHeader('Access-Control-Allow-Origin', '*');
+  res.end('tsarjke');
   return { props: {} };
 }
 
