@@ -1,7 +1,7 @@
 const plain = () => null;
 
 export const getServerSideProps = async ({ res }) => {
-  res.setHeader('Content-Type', 'text/plain; charset=UTF-8');
+  res.setHeader('Content-Type', 'text/plain');
 	res.setHeader('X-Author', 'vanyatsar');
 	res.setHeader('Access-Control-Allow-Origin', '*');
   res.end('vanyatsar');
