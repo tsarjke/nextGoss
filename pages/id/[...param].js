@@ -4,7 +4,7 @@ const plain = () => null;
 
 export const getServerSideProps = async ({ res, req }) => {
 	res.setHeader('Content-Type', 'text/plain; charset=UTF-8');
-	res.setHeader('X-Author', 'tsarjke');
+	res.setHeader('X-Author', 'vanyatsar');
 	res.setHeader('Access-Control-Allow-Origin', '*');
 	const requrl = req.url.split('/');
 	const id = requrl[2];
